@@ -1,0 +1,23 @@
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.gradiente {
+  background-image: linear-gradient(to right, #ff8800, #00fff26e, #b7ff00c8);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+
+
+.form-control::placeholder {
+  color: #0d6dfd63;
+}
