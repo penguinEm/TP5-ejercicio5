@@ -22,7 +22,7 @@
     />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>TP5- 5: Crónometro</title>
+    <title>TP5- 5: Cronómetro</title>
   </head>
   <body data-bs-theme="dark">
     <header>
@@ -36,12 +36,21 @@
       </nav>
     </header>
     <main>
-      <section class="container">
-        <article class="row text-center">
-          
-        </article>
+      <section class="container d-flex align-items-center justify-content-center vh-100">
+        <div class=" text-center py-5 d-inline-block py-1 px-5 rounded-2 bg-body-tertiary">
+          <div class="text-secondary-emphasis mb-3 mx-4 bg-black rounded-1">
+            <span class="minutos lead fs-4">00</span>
+            <span class="separador">|</span>
+            <span class="segundos lead fs-4">00</span>
+            <span class="milisegundos fw-lighter">00</span>
+          </div>
+          <div>
+            <button type="button" class="btn btn-success" id="iniciar"><i class="fa-solid fa-play"></i></button>
+            <button type="button" class="btn btn-success mx-3" id="pausar"><i class="fa-solid fa-stopwatch"></i></button>
+            <button type="button" class="btn btn-danger" id="reiniciar"><i class="fa-solid fa-rotate-right"></i></button>
+          </div>
+        </div>
       </section>
-      
     </main>
     <footer class="text-center border-top border-secondary-subtle pt-3">
       <p>&copy; Todos los derechos reservados</p>
